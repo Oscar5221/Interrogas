@@ -1,0 +1,40 @@
+USE [Interrogas]
+GO
+/****** Object:  StoredProcedure [dbo].[Locations_Delete_ById]    Script Date: 5/16/2022 4:06:47 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		Oscar Hernandez
+-- Create date: 4/2/2022
+-- Description:	Locations Delete
+-- Code Reviewer: David Wiltrout
+
+
+-- MODIFIED BY: Oscar Hernandez
+-- MODIFIED DATE:4/2/2022
+-- Code Reviewer: 
+-- Note: 
+-- =============================================
+
+ALTER PROC [dbo].[Locations_Delete_ById]
+				@Id int
+as
+
+/*---------------Test Code---------------
+
+Declare @Id int = 6
+
+Execute dbo.Locations_Delete @Id
+
+Select * from dbo.Locations
+
+*/
+
+BEGIN
+
+DELETE FROM [dbo].[Locations]
+      WHERE @Id = Id
+
+END
