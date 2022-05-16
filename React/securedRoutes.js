@@ -18,3 +18,5 @@ const allRoutes = [
 ];
 
 export default allRoutes;
+
+//Only the route I wrote is displayed here.
